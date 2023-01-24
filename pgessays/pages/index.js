@@ -33,7 +33,7 @@ export default function Home() {
         </div>
         <div className='menu'>
           <ul>
-            <li>Most recent</li>
+            <li className='example'>Most recent</li>
             <li>Startups</li>
             <li>Family</li>
             <li>Most recent</li>
