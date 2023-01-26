@@ -5,10 +5,14 @@ import styles from '@/styles/Home.module.css'
 import { GiSoundOn } from 'react-icons/gi'
 import { GiSoundOff } from 'react-icons/gi'
 import adam from '../public/adam.png'
+import essays from './essays.json'
+
 
 
 
 const inter = Inter({ subsets: ['latin'] })
+
+
 
 export default function Home() {
   return (
