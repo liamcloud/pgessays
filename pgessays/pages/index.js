@@ -6,6 +6,7 @@ import { GiSoundOn } from 'react-icons/gi'
 import { GiSoundOff } from 'react-icons/gi'
 import adam from '../public/adam.png'
 import essays from './essays.json'
+import { useState } from 'react'
 
 
 
@@ -15,6 +16,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 
 export default function Home() {
+  const [category, setCategory] = useState("startups")
+  const myStyle={
+    backgroundImage: "url('https://www.dropbox.com/s/l5syzjybgy0lf88/DALL%C2%B7E%202023-01-26%2015.07.54%20-%20a%20painting%20by%20michelangelo%20of%20a%20man%20thinking%2C%20renaissance%20vibe%2C%20baroque%20vibe.png?raw=1')",
+    opacity: 0.8
+};
   return (
     <>
       <Head>
@@ -46,11 +52,12 @@ export default function Home() {
         </div>
         <div className='grid'>
           {essays.map(essay => {
+            if(essay.category.indexOf(category) !== -1){
             return(
-              <div className='essayContainer'>
+              <div className='essayContainer' style={myStyle}>
                 <h1>{essay.title}</h1>
               </div>
-            )
+            )}
           })}
         </div>
         <div className='footer'>

@@ -156,11 +156,14 @@ li{
 .grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10%;
+  gap: 5%;
+  width:70%;
 }
 
 .essayContainer{
-  background:black;
-  text-align: center;
-  vertical-align:middle;
+  height: 375px;
+  background-position: center;
+  background-size: 92%;
+  border-radius: 20px;
 }
+
