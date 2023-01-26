@@ -44,8 +44,14 @@ export default function Home() {
             <li>Most recent</li>
           </ul>
         </div>
-        <div>
-          <h2>Article block</h2>
+        <div className='grid'>
+          {essays.map(essay => {
+            return(
+              <div className='essayContainer'>
+                <h1>{essay.title}</h1>
+              </div>
+            )
+          })}
         </div>
         <div className='footer'>
           <h4>Made by <a>Liam Cloud</a></h4>

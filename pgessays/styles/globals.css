@@ -147,9 +147,20 @@ li{
 }
 
 .example{
-  background-color: #F8C8DC
-  ;
+  background-color: #F8C8DC;
   padding:12px;
   border-radius: 15px;
   box-shadow: 12px 12px 2px 1px white;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10%;
+}
+
+.essayContainer{
+  background:black;
+  text-align: center;
+  vertical-align:middle;
 }
