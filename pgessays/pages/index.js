@@ -54,7 +54,7 @@ export default function Home() {
           {essays.map(essay => {
             if(essay.category.indexOf(category) !== -1){
             return(
-              <div className='essayContainer' style={myStyle}>
+              <div key={essay.id} className='essayContainer' style={myStyle}>
                 <h1>{essay.title}</h1>
               </div>
             )}
