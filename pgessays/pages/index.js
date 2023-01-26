@@ -7,20 +7,18 @@ import { GiSoundOff } from 'react-icons/gi'
 import adam from '../public/adam.png'
 import essays from './essays.json'
 import { useState } from 'react'
-
-
-
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
-
-
 export default function Home() {
-  const [category, setCategory] = useState("startups")
-  const myStyle={
-    backgroundImage: "url('https://www.dropbox.com/s/l5syzjybgy0lf88/DALL%C2%B7E%202023-01-26%2015.07.54%20-%20a%20painting%20by%20michelangelo%20of%20a%20man%20thinking%2C%20renaissance%20vibe%2C%20baroque%20vibe.png?raw=1')",
-    opacity: 0.8
-};
+  const [category, setCategory] = useState('startups')
+  const [essayId, setEssayId] = useState(2)
+  const myStyle = {
+    backgroundImage:
+      "url('https://www.dropbox.com/s/l5syzjybgy0lf88/DALL%C2%B7E%202023-01-26%2015.07.54%20-%20a%20painting%20by%20michelangelo%20of%20a%20man%20thinking%2C%20renaissance%20vibe%2C%20baroque%20vibe.png?raw=1')",
+    opacity: 0.8,
+  }
   return (
     <>
       <Head>
@@ -29,39 +27,46 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className='sound'><GiSoundOn /></h1>
+      <h1 className="sound">
+        <GiSoundOn />
+      </h1>
       <main className={styles.main}>
-        <div className='header'>
-        <Image
-          loader=""
-          src={adam}
-          alt="Adam"
-          width={700}
-          height={490}
-          />
-          <h1 className='mainTitle'>Paul Graham <br></br>Essays</h1>
+        <div className="header">
+          <Image loader="" src={adam} alt="Adam" width={700} height={490} />
+          <h1 className="mainTitle">
+            Paul Graham <br></br>Essays
+          </h1>
         </div>
-        <div className='menu'>
+        <div className="menu">
           <ul>
-            <li className='example'>Most recent</li>
+            <li className="example">Most recent</li>
             <li>Startups</li>
             <li>Family</li>
             <li>Most recent</li>
             <li>Most recent</li>
           </ul>
         </div>
-        <div className='grid'>
-          {essays.map(essay => {
-            if(essay.category.indexOf(category) !== -1){
-            return(
-              <div key={essay.id} className='essayContainer' style={myStyle}>
-                <h1>{essay.title}</h1>
-              </div>
-            )}
+        <div className="grid">
+          {essays.map((essay) => {
+            if (essay.category.indexOf(category) !== -1) {
+              return (
+                <Link href={'/' + essay.id}>
+                  <div
+                    key={essay.id}
+                    className="essayContainer"
+                    style={myStyle}
+                  >
+                    <h2>{essay.title}</h2>
+                  </div>
+                </Link>
+              )
+            }
           })}
         </div>
-        <div className='footer'>
-          <h4>Made by <a>Liam Cloud</a></h4>
+        <div className="footer">
+          <h4>
+            Made by <a>Liam Cloud</a>
+          </h4>
         </div>
       </main>
     </>
