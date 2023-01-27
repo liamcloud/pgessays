@@ -136,7 +136,7 @@ h1{
 .menu ul {
   display: grid ;
   grid-template-columns: repeat(5, 1fr);
-  gap: 3%;
+  gap: 5px 3%;
   min-width:75vw;
   list-style-type: none;
   align-items: center;
@@ -166,7 +166,7 @@ li{
 .essayContainer{
   height: 380px;
   background-position: center;
-  background-size: 120%;
+  background-size:cover;
   background-repeat:no-repeat;
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
@@ -199,7 +199,7 @@ text-align: center;
 }
 
 
-@media (max-width: 1090px) {
+@media (max-width: 1150px) {
   .header{
     flex-direction: column-reverse;
   }
@@ -213,12 +213,21 @@ text-align: center;
   }
   .grid{
     grid-template-columns: repeat(2, 1fr);
+    gap:10% 20%;
+    min-width:50vw;
+  }
+  .essayContainer{
+    height:500px;
+    background-size:cover;
   }
 }
 
 @media (max-width: 670px) {
   .grid{
     grid-template-columns: repeat(1, 1fr);
+  }
+  .essayContainer{
+    height:500px;
   }
 }
 
