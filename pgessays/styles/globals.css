@@ -200,9 +200,13 @@ text-align: center;
 @media (max-width: 1090px) {
   .header{
     flex-direction: column-reverse;
-    flex-shrink: 1;
   }
   .header h1 {
-    max-width: 100vw;
+    max-width: 100%;
+    font-size: 40px;
+  }
+  .header img{
+    max-width: 100%;
+    height: inherit;
   }
 }
