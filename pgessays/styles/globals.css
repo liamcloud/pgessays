@@ -152,7 +152,7 @@ li{
   background-color: #F8C8DC;
   padding:12px;
   border-radius: 15px;
-  box-shadow: 12px 12px 2px 1px white;
+  box-shadow:-12px 12px 2px 1px white;
 }
 
 .grid{
@@ -193,4 +193,15 @@ li {
 align-self: center;
 margin: 0 auto;
 text-align: center;
+}
+
+
+@media (max-width: 1090px) {
+  .header{
+    flex-direction: column-reverse;
+    flex-shrink: 1;
+  }
+  .header h1 {
+    max-width: 100vw;
+  }
 }

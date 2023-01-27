@@ -34,7 +34,7 @@ export default function Home() {
         <div className="header">
           <Image loader="" src={adam} alt="Adam" width={700} height={490} />
           <h1 className="mainTitle">
-            Paul Graham <br></br>Essays
+            Paul Graham's<br></br>Essays
           </h1>
         </div>
         <div className="menu">
