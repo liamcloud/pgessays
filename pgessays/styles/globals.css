@@ -213,11 +213,11 @@ text-align: center;
   }
   .grid{
     grid-template-columns: repeat(2, 1fr);
-    gap:10% 20%;
+    gap:8% 20%;
     min-width:50vw;
   }
   .essayContainer{
-    height:500px;
+    height:550px;
     background-size:cover;
   }
 }
