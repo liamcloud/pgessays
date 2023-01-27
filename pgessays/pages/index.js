@@ -39,18 +39,18 @@ export default function Home() {
         </div>
         <div className="menu">
           <ul>
-            <li className="example">Most recent</li>
+            <li className="example">Latest</li>
             <li>Startups</li>
             <li>Family</li>
-            <li>Most recent</li>
-            <li>Most recent</li>
+            <li>Latest</li>
+            <li>Latest</li>
           </ul>
         </div>
         <div className="grid">
           {essays.map((essay) => {
             if (essay.category.indexOf(category) !== -1) {
               return (
-                <Link href={'/' + essay.id}>
+                <Link href={'/' + essay.id} key={essay.id}>
                   <div
                     key={essay.id}
                     className="essayContainer"
