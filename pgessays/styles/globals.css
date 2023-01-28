@@ -158,8 +158,8 @@ li{
 
 .grid{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15%;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5%;
   min-width:60vw;
 }
 
@@ -196,6 +196,7 @@ li {
 align-self: center;
 margin: 0 auto;
 text-align: center;
+cursor: pointer;
 }
 
 
