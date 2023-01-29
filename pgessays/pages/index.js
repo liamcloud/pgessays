@@ -8,7 +8,6 @@ import adam from '../public/adam.png'
 import essays from './essays.json'
 import { useState } from 'react'
 import Link from 'next/link'
-import { NodeNextResponse } from 'next/dist/server/base-http/node'
 
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
@@ -35,6 +34,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <h1 className="sound">
         <GiSoundOn />
       </h1>
@@ -45,15 +45,18 @@ export default function Home() {
             Paul Graham&#39;s<br></br>Essays
           </h1>
         </div>
-        <div className="menu">
-          <ul>
+        <nav className="Navbar">
+          <ul className='navItems'>
             <li className={latest ? "example" : "none"}>Latest</li>
             <li onClick={updateCat} className={startups ? "example" : "none"}>Startups</li>
             <li onClick={updateCat2}>Family</li>
             <li>Latest</li>
             <li>Latest</li>
           </ul>
-        </div>
+          <div className='nav-toggle'>
+            <div className='bar'></div>
+          </div>
+          </nav>
         <div className="grid">
           {essays.map((essay) => {
             if (essay.category.indexOf(category) !== -1) {
@@ -61,7 +64,7 @@ export default function Home() {
                 <Link href={'/' + essay.id} key={essay.id}>
                   <div
                     key={essay.id}
-                    className="essayContainer"
+                    className={"essayContainer"}
                     style={myStyle}
                   >
                     <h2>{essay.title}</h2>

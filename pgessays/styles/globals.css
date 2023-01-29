@@ -133,7 +133,7 @@ h1{
   padding-top: 3%;
 }
 
-.menu ul {
+.Navbar ul {
   display: grid ;
   grid-template-columns: repeat(5, 1fr);
   gap: 5px 3%;
@@ -220,6 +220,21 @@ cursor: pointer;
   .essayContainer{
     height:550px;
     background-size:cover;
+  }
+  .Navbar ul {
+    display: grid ;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px 3%;
+    min-width:90vw;
+    list-style-type: none;
+    align-items: center;
+    padding-bottom:7%;
+  }
+  
+  li{
+    font-size: 30px;
+    font-family: 'Old Standard TT', serif;
+  
   }
 }
 
