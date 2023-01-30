@@ -63,7 +63,7 @@ export default function Home() {
           {essays.map((essay) => {
             if (essay.category.indexOf(category) !== -1) {
               return (
-                <Link href={'/' + essay.id} key={essay.id}>
+                <Link href={`${essay?.slug}`} key={essay.id}>
                   <div
                     key={essay.id}
                     className={'essayContainer'}

@@ -3,6 +3,7 @@
         "id": 1,
         "title": "How to get new ideas",
         "category": ["startups", "most recents"],
+        "slug": "test-a",
         "image": "https://drive.google.com/file/d/1cq6mAOOVsApF6TlJrY1u5uhKF_QQazl8/view?usp=share_link",
         "time": "January 2023",
         "content": [
@@ -14,23 +15,27 @@
     {
         "id": 2,
         "title": "test",
+        "slug": "test-b",
         "content": "test",
         "category": ["startups", "most recents"]
     },
     {
         "id": 3,
         "title": "test",
+        "slug": "test-c",
         "content": "test",
         "category": ["startups", "most recents"]
     },
     {
         "id": 4,
         "title": "test",
+        "slug": "test-d",
         "content": "test",
         "category": ["startups", "most recents"]
     },
     {
         "id": 5,
+        "slug": "test-Z",
         "title": "test",
         "content": "test",
         "category": ["startups", "most recents"]
