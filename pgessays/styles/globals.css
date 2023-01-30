@@ -272,3 +272,12 @@ li {
 h2 {
   position: relative;
 }
+.lol{
+  width: 80vw;
+  box-shadow: 12px 12px 2px 1px #f8c8dc;
+  border-radius: 50px;
+}
+
+.lol input{
+  color:red !important;
+}
