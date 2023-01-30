@@ -11,20 +11,20 @@ import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
-  const [category, setCategory] = useState("Latest")
+  const [category, setCategory] = useState('Latest')
   const [latest, setLatest] = useState(true)
   const [startups, setStartups] = useState(false)
   const updateCat = () => {
-    setCategory("startups")
+    setCategory('startups')
     setLatest(false)
     setStartups(true)
   }
   const updateCat2 = () => {
-    setCategory("family")
+    setCategory('family')
   }
   const myStyle = {
     backgroundImage:
-      "url('https://www.dropbox.com/s/qd5o7hito845ohi/DALL%C2%B7E%202023-01-27%2013.32.23%20-%20stained%20glass%20window%20of%20a%20painting%20by%20michelangelo%20of%20mans%20thinking%20about%20philosophy%2C%20renaissance%20vibe%2C%20baroque%20vibe%20%281%29.png?raw=1')"
+      "url('https://www.dropbox.com/s/qd5o7hito845ohi/DALL%C2%B7E%202023-01-27%2013.32.23%20-%20stained%20glass%20window%20of%20a%20painting%20by%20michelangelo%20of%20mans%20thinking%20about%20philosophy%2C%20renaissance%20vibe%2C%20baroque%20vibe%20%281%29.png?raw=1')",
   }
   return (
     <>
@@ -46,17 +46,19 @@ export default function Home() {
           </h1>
         </div>
         <nav className="Navbar">
-          <ul className='navItems'>
-            <li className={latest ? "example" : "none"}>Latest</li>
-            <li onClick={updateCat} className={startups ? "example" : "none"}>Startups</li>
+          <ul className="navItems">
+            <li className={latest ? 'example' : 'none'}>Latest</li>
+            <li onClick={updateCat} className={startups ? 'example' : 'none'}>
+              Startups
+            </li>
             <li onClick={updateCat2}>Family</li>
             <li>Latest</li>
             <li>Latest</li>
           </ul>
-          <div className='nav-toggle'>
-            <div className='bar'></div>
+          <div className="nav-toggle">
+            <div className="bar"></div>
           </div>
-          </nav>
+        </nav>
         <div className="grid">
           {essays.map((essay) => {
             if (essay.category.indexOf(category) !== -1) {
@@ -64,7 +66,7 @@ export default function Home() {
                 <Link href={'/' + essay.id} key={essay.id}>
                   <div
                     key={essay.id}
-                    className={"essayContainer"}
+                    className={'essayContainer'}
                     style={myStyle}
                   >
                     <h2>{essay.title}</h2>

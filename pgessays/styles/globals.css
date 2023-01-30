@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&family=UnifrakturMaguntia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&family=UnifrakturMaguntia&display=swap");
 
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -90,9 +90,19 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #2980B9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 a {
@@ -106,20 +116,20 @@ a {
   }
 }
 
-.sound{
+.sound {
   font-size: 50px;
   text-align: right;
   padding: 20px 40px;
   cursor: pointer;
-  padding-bottom:0;
+  padding-bottom: 0;
 }
 
-h1{
-  font-family: 'UnifrakturMaguntia', cursive;
+h1 {
+  font-family: "UnifrakturMaguntia", cursive;
   font-size: 80px;
   text-align: center;
-  color:white;
-  text-shadow: #F8C8DC 1px 3px;
+  color: white;
+  text-shadow: #f8c8dc 1px 3px;
   letter-spacing: 3px;
   line-height: 1.4;
 }
@@ -129,128 +139,125 @@ h1{
   align-items: center;
 }
 
-.mainTitle{
+.mainTitle {
   padding-top: 3%;
 }
 
 .Navbar ul {
-  display: grid ;
+  display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 5px 3%;
-  min-width:75vw;
+  min-width: 75vw;
   list-style-type: none;
   align-items: center;
-  padding-bottom:7%;
+  padding-bottom: 7%;
 }
 
-li{
+li {
   font-size: 30px;
-  font-family: 'Old Standard TT', serif;
-
+  font-family: "Old Standard TT", serif;
 }
 
-.example{
-  background-color: #F8C8DC;
-  padding:12px;
+.example {
+  background-color: #f8c8dc;
+  padding: 12px;
   border-radius: 15px;
-  box-shadow:-12px 12px 2px 1px white;
+  box-shadow: -12px 12px 2px 1px white;
 }
 
-.grid{
+.grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 5%;
-  min-width:60vw;
+  min-width: 60vw;
 }
 
-.essayContainer{
+.essayContainer {
   height: 380px;
   background-position: center;
-  background-size:cover;
-  background-repeat:no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
   display: flex;
   border: 5px solid white;
-  box-shadow: 12px 12px 2px 1px #F8C8DC;
+  box-shadow: 12px 12px 2px 1px #f8c8dc;
 }
 
-h2{
+h2 {
   font-size: 40px;
-  text-shadow: #F8C8DC 0.4px 1.2px;
+  text-shadow: #f8c8dc 0.4px 1.2px;
   letter-spacing: 3px;
   line-height: 1.4;
-  font-family: 'UnifrakturMaguntia', cursive;
-justify-self:center;
-align-self: center;
-margin: 0 auto;
-text-align: center;
+  font-family: "UnifrakturMaguntia", cursive;
+  justify-self: center;
+  align-self: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 ul {
-  display:flex;
+  display: flex;
 }
 
 li {
-  justify-self:center;
-align-self: center;
-margin: 0 auto;
-text-align: center;
-cursor: pointer;
+  justify-self: center;
+  align-self: center;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
 }
 
-
 @media (max-width: 1150px) {
-  .header{
+  .header {
     flex-direction: column-reverse;
   }
   .header h1 {
     max-width: 100%;
     font-size: 40px;
   }
-  .header img{
+  .header img {
     max-width: 100%;
     height: inherit;
   }
-  .grid{
+  .grid {
     grid-template-columns: repeat(2, 1fr);
-    gap:8% 20%;
-    min-width:50vw;
+    gap: 8% 20%;
+    min-width: 50vw;
   }
-  .essayContainer{
-    height:550px;
-    background-size:cover;
+  .essayContainer {
+    height: 550px;
+    background-size: cover;
   }
   .Navbar ul {
-    display: grid ;
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 5px 3%;
-    min-width:90vw;
+    min-width: 90vw;
     list-style-type: none;
     align-items: center;
-    padding-bottom:7%;
+    padding-bottom: 7%;
   }
-  
-  li{
+
+  li {
     font-size: 30px;
-    font-family: 'Old Standard TT', serif;
-  
+    font-family: "Old Standard TT", serif;
   }
 }
 
 @media (max-width: 670px) {
-  .grid{
+  .grid {
     grid-template-columns: repeat(1, 1fr);
   }
-  .essayContainer{
-    height:500px;
+  .essayContainer {
+    height: 500px;
   }
 }
 
-.essayContainer{
-  position: relative; 
+.essayContainer {
+  position: relative;
 }
-.essayContainer::before{
+.essayContainer::before {
   content: "";
   position: absolute;
   border-top-left-radius: 200px;
@@ -259,7 +266,7 @@ cursor: pointer;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0,0,0,0.25);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 h2 {
