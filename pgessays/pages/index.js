@@ -52,8 +52,8 @@ export default function Home() {
             Paul Graham&#39;s<br></br>Essays
           </h1>
         </div>
-        <div className='lol'>
-        <Select options={options}/>
+        <div>
+          <Select />
         </div>
         <nav className="Navbar">
           <ul className="navItems">
