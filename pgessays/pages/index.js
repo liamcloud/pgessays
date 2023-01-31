@@ -33,6 +33,10 @@ export default function Home() {
     { value: 'family', label: 'Family' },
     { value: 'others', label: 'Others' },
   ]
+  
+  const colorStyles = {
+    control: (styles => ({...styles, border: "none", borderRadius: "10px", padding: "12px", boxShadow:"12px 12px 2px 1px #f8c8dc", fontSize:"18px", fontFamily: "Old Standard TT, serif"}))
+  }
   return (
     <>
       <Head>
@@ -53,17 +57,13 @@ export default function Home() {
           </h1>
         </div>
         <div className='menu'>
-        <div>
-          <form>
-            <label>
-              Name:
-              <input type="text" name="name" />
-            </label>
-            <input type="submit" value="Submit" />
-          </form>
+        <div className='select'>
+          <Select styles={colorStyles}/>
         </div>
-        <div>
-          <Select />
+        <div className='form'>
+          <form>
+              <input type="text" name="search" placeholder='Search' />
+          </form>
         </div>
         </div>
         <nav className="Navbar">
