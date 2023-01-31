@@ -16,10 +16,11 @@ export default function Home() {
   const [category, setCategory] = useState('Latest')
   const [latest, setLatest] = useState(true)
   const [startups, setStartups] = useState(false)
-  const updateCat = () => {
-    setCategory('startups')
+  const updateCat = (selectedOption) => {
+    setCategory(selectedOption.value)
     setLatest(false)
     setStartups(true)
+    console.log(selectedOption)
   }
   const updateCat2 = () => {
     setCategory('family')
@@ -41,7 +42,7 @@ export default function Home() {
       border: 'none',
       borderRadius: '10px',
       padding: '12px',
-      boxShadow: '12px 12px 2px 1px #f8c8dc',
+      boxShadow: '10px 10px 2px 1px #f8c8dc',
       fontSize: '18px',
       fontFamily: 'Old Standard TT, serif',
       cursor: 'pointer',
@@ -68,7 +69,7 @@ export default function Home() {
         </div>
         <div className="menu">
           <div className="select">
-            <Select styles={colorStyles} options={options}/>
+            <Select styles={colorStyles} options={options} onChange={updateCat}/>
           </div>
           <div className="form">
           <GoSearch className='iconSearch' />
@@ -77,20 +78,6 @@ export default function Home() {
             </form>
           </div>
         </div>
-        <nav className="Navbar">
-          <ul className="navItems">
-            <li className={latest ? 'example' : 'none'}>Latest</li>
-            <li onClick={updateCat} className={startups ? 'example' : 'none'}>
-              Startups
-            </li>
-            <li onClick={updateCat2}>Family</li>
-            <li>Latest</li>
-            <li>Latest</li>
-          </ul>
-          <div className="nav-toggle">
-            <div className="bar"></div>
-          </div>
-        </nav>
         <div className="grid">
           {essays.map((essay) => {
             if (essay.category.indexOf(category) !== -1) {
