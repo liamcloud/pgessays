@@ -4,6 +4,7 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import { GiSoundOn } from 'react-icons/gi'
 import { GiSoundOff } from 'react-icons/gi'
+import { GoSearch } from 'react-icons/go'
 import adam from '../public/adam.png'
 import essays from './essays.json'
 import { useState } from 'react'
@@ -28,14 +29,23 @@ export default function Home() {
       "url('https://www.dropbox.com/s/qd5o7hito845ohi/DALL%C2%B7E%202023-01-27%2013.32.23%20-%20stained%20glass%20window%20of%20a%20painting%20by%20michelangelo%20of%20mans%20thinking%20about%20philosophy%2C%20renaissance%20vibe%2C%20baroque%20vibe%20%281%29.png?raw=1')",
   }
   const options = [
-    { value: 'mostrecent', label: 'Most recent' },
+    { value: 'mostrecent', label: 'Most recent'},
     { value: 'startups', label: 'Startups' },
     { value: 'family', label: 'Family' },
     { value: 'others', label: 'Others' },
   ]
-  
+
   const colorStyles = {
-    control: (styles => ({...styles, border: "none", borderRadius: "10px", padding: "12px", boxShadow:"12px 12px 2px 1px #f8c8dc", fontSize:"18px", fontFamily: "Old Standard TT, serif"}))
+    control: (styles) => ({
+      ...styles,
+      border: 'none',
+      borderRadius: '10px',
+      padding: '12px',
+      boxShadow: '12px 12px 2px 1px #f8c8dc',
+      fontSize: '18px',
+      fontFamily: 'Old Standard TT, serif',
+      cursor: 'pointer',
+    }),
   }
   return (
     <>
@@ -56,15 +66,16 @@ export default function Home() {
             Paul Graham&#39;s<br></br>Essays
           </h1>
         </div>
-        <div className='menu'>
-        <div className='select'>
-          <Select styles={colorStyles}/>
-        </div>
-        <div className='form'>
-          <form>
-              <input type="text" name="search" placeholder='Search' />
-          </form>
-        </div>
+        <div className="menu">
+          <div className="select">
+            <Select styles={colorStyles} options={options}/>
+          </div>
+          <div className="form">
+          <GoSearch className='iconSearch' />
+            <form>
+              <input type="text" name="search" placeholder="Search" />
+            </form>
+          </div>
         </div>
         <nav className="Navbar">
           <ul className="navItems">

@@ -287,18 +287,29 @@ h2 {
 
 .form{
   width:30%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 12px 12px 2px 1px #f8c8dc;
+  border-radius: 10px;
+}
+.iconSearch{
+  color:gray;
+  width:20%;
+  margin:none;
 }
 
 form input {
   width:100%;
-  background-color: white;
+  background-color: transparent;
   border: none;
   padding:20px;
-  border-radius: 10px;
+  padding-top:22px;
+  padding-left:5px;
   color:black;
-  box-shadow: 12px 12px 2px 1px #f8c8dc;
   font-size:18px;
   font-family: "Old Standard TT", serif;
+  
 }
 
 *:focus {
