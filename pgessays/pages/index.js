@@ -28,10 +28,10 @@ export default function Home() {
       "url('https://www.dropbox.com/s/qd5o7hito845ohi/DALL%C2%B7E%202023-01-27%2013.32.23%20-%20stained%20glass%20window%20of%20a%20painting%20by%20michelangelo%20of%20mans%20thinking%20about%20philosophy%2C%20renaissance%20vibe%2C%20baroque%20vibe%20%281%29.png?raw=1')",
   }
   const options = [
-    {value: "mostrecent", label:"Most recent"},
-    {value: "startups", label:"Startups"},
-    {value: "family", label:"Family"},
-    {value: "others", label:"Others"},
+    { value: 'mostrecent', label: 'Most recent' },
+    { value: 'startups', label: 'Startups' },
+    { value: 'family', label: 'Family' },
+    { value: 'others', label: 'Others' },
   ]
   return (
     <>
@@ -52,8 +52,19 @@ export default function Home() {
             Paul Graham&#39;s<br></br>Essays
           </h1>
         </div>
+        <div className='menu'>
+        <div>
+          <form>
+            <label>
+              Name:
+              <input type="text" name="name" />
+            </label>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
         <div>
           <Select />
+        </div>
         </div>
         <nav className="Navbar">
           <ul className="navItems">
