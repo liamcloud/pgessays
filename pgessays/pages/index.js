@@ -16,7 +16,6 @@ export default function Home() {
   const [category, setCategory] = useState('Latest')
   const updateCat = (selectedOption) => {
     setCategory(selectedOption.value)
-    console.log(selectedOption)
   }
   const myStyle = {
     backgroundImage:
