@@ -143,28 +143,6 @@ h1 {
   padding-top: 3%;
 }
 
-.Navbar ul {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 5px 3%;
-  min-width: 75vw;
-  list-style-type: none;
-  align-items: center;
-  padding-bottom: 7%;
-}
-
-li {
-  font-size: 30px;
-  font-family: "Old Standard TT", serif;
-}
-
-.example {
-  background-color: #f8c8dc;
-  padding: 12px;
-  border-radius: 15px;
-  box-shadow: -12px 12px 2px 1px white;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -194,18 +172,6 @@ h2 {
   align-self: center;
   margin: 0 auto;
   text-align: center;
-}
-
-ul {
-  display: flex;
-}
-
-li {
-  justify-self: center;
-  align-self: center;
-  margin: 0 auto;
-  text-align: center;
-  cursor: pointer;
 }
 
 @media (max-width: 1150px) {
@@ -307,7 +273,7 @@ form input {
   padding:20px;
   padding-top:22px;
   padding-left:5px;
-  color:black;
+  color:gray;
   font-size:18px;
   font-family: "Old Standard TT", serif;
   
