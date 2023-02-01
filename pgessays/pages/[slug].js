@@ -5,12 +5,15 @@ import angels from '../public/angels.png'
 import { HiOutlineArrowSmLeft } from 'react-icons/hi'
 import Link from "next/link";
 import { GiSoundOn } from 'react-icons/gi'
+import { useState } from 'react'
 
 const Blog = ({ article }) => {
   const myStyle = {
     backgroundImage:
       "url('https://www.dropbox.com/s/qd5o7hito845ohi/DALL%C2%B7E%202023-01-27%2013.32.23%20-%20stained%20glass%20window%20of%20a%20painting%20by%20michelangelo%20of%20mans%20thinking%20about%20philosophy%2C%20renaissance%20vibe%2C%20baroque%20vibe%20%281%29.png?raw=1')",
   }
+const category = article[0]?.category[0]
+console.log(category + 'i love you')
   return (
     <main className={styles.main}>
       <div className='essayHeader'>
@@ -25,9 +28,10 @@ const Blog = ({ article }) => {
       <p className="para">{article[0]?.content[2]}</p>
     </div>
     <div>
-    <div className="grid">
+      <h1>You might also like</h1>
+      <div className="grid">
           {articles.map((essay) => {
-           
+            if (essay.category.indexOf(category) !== -1 && essay.title !== article[0]?.title) {
               return (
                 <Link href={`${essay?.slug}`} key={essay.id}>
                   <div
@@ -37,7 +41,9 @@ const Blog = ({ article }) => {
                   >
                     <h2>{essay.title}</h2>
                   </div>
-                </Link>)
+                </Link>
+              )
+            }
           })}
         </div>
     </div>

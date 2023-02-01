@@ -17,7 +17,7 @@
         "title": "test",
         "slug": "test-b",
         "content": "test",
-        "category": ["startups", "most recents"]
+        "category": ["", "most recents"]
     },
     {
         "id": 3,
