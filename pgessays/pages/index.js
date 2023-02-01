@@ -13,7 +13,7 @@ import Select from 'react-select'
 
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
-  const [category, setCategory] = useState('Latest')
+  const [category, setCategory] = useState('mostrecent')
   const [search, setSearch] = useState('')
   const updateCat = (selectedOption) => {
     setCategory(selectedOption.value)
@@ -23,10 +23,10 @@ export default function Home() {
       "url('https://www.dropbox.com/s/qd5o7hito845ohi/DALL%C2%B7E%202023-01-27%2013.32.23%20-%20stained%20glass%20window%20of%20a%20painting%20by%20michelangelo%20of%20mans%20thinking%20about%20philosophy%2C%20renaissance%20vibe%2C%20baroque%20vibe%20%281%29.png?raw=1')",
   }
   const options = [
-    { value: 'mostrecent', label: 'Most recent', color: 'gray' },
-    { value: 'startups', label: 'Startups', color: 'gray' },
-    { value: 'family', label: 'Family', color: 'gray' },
-    { value: 'others', label: 'Others', color: 'gray' },
+    { value: 'mostrecent', label: 'Most recent', color: 'gray', id: 0 },
+    { value: 'startups', label: 'Startups', color: 'gray', id: 2 },
+    { value: 'family', label: 'Family', color: 'gray', id: 3 },
+    { value: 'others', label: 'Others', color: 'gray', id: 4 },
   ]
 
   const colorStyles = {
@@ -75,6 +75,7 @@ export default function Home() {
               styles={colorStyles}
               options={options}
               onChange={updateCat}
+              isSearchable={false}
             />
           </div>
           <div className="form">
