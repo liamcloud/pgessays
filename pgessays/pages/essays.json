@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "How to get new ideas",
-        "category": ["startups", "most recents"],
+        "category": ["startups", "mostrecent"],
         "slug": "test-a",
         "image": "https://drive.google.com/file/d/1cq6mAOOVsApF6TlJrY1u5uhKF_QQazl8/view?usp=share_link",
         "time": "January 2023",

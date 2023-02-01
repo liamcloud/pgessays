@@ -45,6 +45,11 @@ export default function Home() {
       return {...styles, color: data.color}
     },
   }
+
+  const searchUpdate = (event) => {
+    setSearch(event.target.value)
+    console.log(search)
+  }
   return (
     <>
       <Head>
@@ -75,12 +80,18 @@ export default function Home() {
           <div className="form">
             <GoSearch className="iconSearch" />
             <form>
-              <input type="text" name="search" placeholder="Search" />
+              <input type="text" name="search" placeholder="Search" onChange={searchUpdate} />
             </form>
           </div>
         </div>
         <div className="grid">
-          {essays.map((essay) => {
+          {essays.filter((essay)=> {
+            if(search == ""){
+              return essay
+            }else if (essay.title.toLowerCase().includes(search.toLocaleLowerCase())){
+              return essay
+            }
+          }).map((essay) => {
             if (essay.category.indexOf(category) !== -1) {
               return (
                 <Link href={`${essay?.slug}`} key={essay.id}>
