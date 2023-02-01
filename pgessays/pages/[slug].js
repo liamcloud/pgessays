@@ -1,13 +1,23 @@
 import articles from "./essays.json";
 import styles from '@/styles/Home.module.css'
+import Image from "next/image"
+import angels from '../public/angels.png'
+import { HiOutlineArrowSmLeft } from 'react-icons/hi'
+import { GiSoundOn } from 'react-icons/gi'
 
 const Blog = ({ article }) => {
   return (
     <main className={styles.main}>
+      <div className='essayHeader'>
+      <a href="/"><HiOutlineArrowSmLeft /></a>
+      <Image loader="" src={angels} alt="Adam" width={800} height={400} />
+      <a href='https://www.youtube.com/watch?v=LKBk-jC1oHQ' target='_blank'><GiSoundOn /></a>
+      </div>
     <div>
-      <h1>{article[0]?.title}</h1>
-      <p>{article[0]?.content}</p>
-      <h2>gl</h2>
+      <h1 className="title">{article[0]?.title}</h1>
+      <p className="para">{article[0]?.content[0]}</p>
+      <p className="para">{article[0]?.content[1]}</p>
+      <p className="para">{article[0]?.content[2]}</p>
     </div>
     <div>
       <h1>gl</h1>

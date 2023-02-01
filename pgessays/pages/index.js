@@ -60,7 +60,7 @@ export default function Home() {
       </Head>
 
       <h1 className="sound">
-        <GiSoundOn />
+        <a href='https://www.youtube.com/watch?v=LKBk-jC1oHQ' target='_blank'><GiSoundOn /></a>
       </h1>
       <main className={styles.main}>
         <div className="header">
