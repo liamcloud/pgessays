@@ -31,7 +31,7 @@ console.log(category + 'i love you')
       <h1>You might also like</h1>
       <div className="grid">
           {articles.map((essay) => {
-            if (essay.category.indexOf(category) !== -1 && essay.title !== article[0]?.title) {
+            if (essay.category.indexOf(category) !== -1 && essay.title !== article[0]?.title && essay.id < article[0]?.id + 5) {
               return (
                 <Link href={`${essay?.slug}`} key={essay.id}>
                   <div
