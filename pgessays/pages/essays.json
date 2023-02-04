@@ -17,21 +17,21 @@
         "title": "ideas to get new ideas ideas ideas",
         "slug": "test-b",
         "content": "test",
-        "category": ["category", "most recents"]
+        "category": ["category", "mostrecent"]
     },
     {
         "id": 3,
         "title": "ideas to get new ideas ideas ideas",
         "slug": "test-c",
         "content": "test",
-        "category": ["startups", "most recents"]
+        "category": ["startups", "mostrecent"]
     },
     {
         "id": 4,
         "title": "test",
         "slug": "test-d",
         "content": "test",
-        "category": ["startups", "most recents"]
+        "category": ["startups", "mostrecent"]
     },
     {
         "id": 5,
