@@ -150,6 +150,7 @@ h1 {
   max-width: 60vw;
 }
 
+
 .essayContainer {
   height: 380px;
   background-position: center;
@@ -303,4 +304,16 @@ form input {
   max-width: 50vw;
   line-height: 2;
   padding-top:4%;
+}
+
+.like{
+  padding-top:10%;
+  padding-bottom:5%;
+}
+
+.li2{
+  padding-top:25%;
+  padding-bottom: 5%;
+  color:black;
+  font-size: 30px;
 }

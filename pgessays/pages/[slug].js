@@ -28,7 +28,7 @@ console.log(category + 'i love you')
       <p className="para">{article[0]?.content[2]}</p>
     </div>
     <div>
-      <h1>You might also like</h1>
+      <h1 className="like">You might also like</h1>
       <div className="grid">
           {articles.map((essay) => {
             if (essay.category.indexOf(category) !== -1 && essay.title !== article[0]?.title && essay.id < article[0]?.id + 5) {
@@ -47,6 +47,7 @@ console.log(category + 'i love you')
           })}
         </div>
     </div>
+    <footer><h1 className="li2">Made by Liam Cloud</h1></footer>
     </main>
   );
 };
