@@ -17,7 +17,7 @@
         "title": "ideas to get new ideas ideas ideas",
         "slug": "test-b",
         "content": "test",
-        "category": ["", "most recents"]
+        "category": ["category", "most recents"]
     },
     {
         "id": 3,
