@@ -191,20 +191,13 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
     gap: 8% 20%;
     min-width: 50vw;
+    padding-bottom: 10%;
   }
   .essayContainer {
     height: 550px;
     background-size: cover;
   }
-  .Navbar ul {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5px 3%;
-    min-width: 90vw;
-    list-style-type: none;
-    align-items: center;
-    padding-bottom: 7%;
-  }
+
 
   .menu{
     flex-direction: column;
@@ -218,15 +211,14 @@ h2 {
 .form{
   width:50% !important;
 }
-  li {
-    font-size: 30px;
-    font-family: "Old Standard TT", serif;
-  }
 }
 
 @media (max-width: 670px) {
   .grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8% 10%;
+    min-width: 80vw;
+    padding-bottom: 20%;
   }
   .essayContainer {
     height: 500px;
@@ -324,8 +316,9 @@ form input {
 }
 
 .li2{
-  padding-top:25%;
+  padding-top:25% !important;
   padding-bottom: 5%;
   color:black;
   font-size: 30px;
+  width: 400px;
 }

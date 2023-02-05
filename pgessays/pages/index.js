@@ -108,10 +108,8 @@ export default function Home() {
             }
           })}
         </div>
-        <div className="footer">
-          <h4>
-            Made by <a>Liam Cloud</a>
-          </h4>
+        <div>
+        <footer><h1 className="li2">Made by Liam Cloud</h1></footer>
         </div>
       </main>
     </>
