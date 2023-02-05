@@ -40,7 +40,7 @@ const Blog = ({ article }) => {
                   <div
                     key={essay.id}
                     className={'essayContainer'}
-                    style={{backgroundImage: `url('${essay.image}')`}}
+                    style={{ backgroundImage: `url('${essay.image}')` }}
                   >
                     <h2>{essay.title}</h2>
                   </div>
