@@ -11,7 +11,6 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Select from 'react-select'
 
-const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   const [category, setCategory] = useState('mostrecent')
   const [search, setSearch] = useState('')
