@@ -41,8 +41,8 @@ export default function Home() {
       fontFamily: 'Old Standard TT, serif',
       cursor: 'pointer',
     }),
-    option: (styles, {data}) => {
-      return {...styles, color: data.color}
+    option: (styles, { data }) => {
+      return { ...styles, color: data.color }
     },
   }
 
@@ -60,7 +60,9 @@ export default function Home() {
       </Head>
 
       <h1 className="sound">
-        <a href='https://www.youtube.com/watch?v=LKBk-jC1oHQ' target='_blank'><GiSoundOn /></a>
+        <a href="https://www.youtube.com/watch?v=LKBk-jC1oHQ" target="_blank">
+          <GiSoundOn />
+        </a>
       </h1>
       <main className={styles.main}>
         <div className="header">
@@ -81,35 +83,46 @@ export default function Home() {
           <div className="form">
             <GoSearch className="iconSearch" />
             <form>
-              <input type="text" name="search" placeholder="Search" onChange={searchUpdate} />
+              <input
+                type="text"
+                name="search"
+                placeholder="Search"
+                onChange={searchUpdate}
+              />
             </form>
           </div>
         </div>
         <div className="grid">
-          {essays.filter((essay)=> {
-            if(search == ""){
-              return essay
-            }else if (essay.title.toLowerCase().includes(search.toLocaleLowerCase())){
-              return essay
-            }
-          }).map((essay) => {
-            if (essay.category.indexOf(category) !== -1) {
-              return (
-                <Link href={`${essay?.slug}`} key={essay.id}>
-                  <div
-                    key={essay.id}
-                    className={'essayContainer'}
-                    style={myStyle}
-                  >
-                    <h2>{essay.title}</h2>
-                  </div>
-                </Link>
-              )
-            }
-          })}
+          {essays
+            .filter((essay) => {
+              if (search == '') {
+                return essay
+              } else if (
+                essay.title.toLowerCase().includes(search.toLocaleLowerCase())
+              ) {
+                return essay
+              }
+            })
+            .map((essay) => {
+              if (essay.category.indexOf(category) !== -1) {
+                return (
+                  <Link href={`${essay?.slug}`} key={essay.id}>
+                    <div
+                      key={essay.id}
+                      className={'essayContainer'}
+                      style={myStyle}
+                    >
+                      <h2>{essay.title}</h2>
+                    </div>
+                  </Link>
+                )
+              }
+            })}
         </div>
         <div>
-        <footer><h1 className="li2">Made by Liam Cloud</h1></footer>
+          <footer>
+            <h1 className="li2">Made by Liam Cloud</h1>
+          </footer>
         </div>
       </main>
     </>
