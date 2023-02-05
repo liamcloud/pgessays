@@ -9,6 +9,8 @@ import { GiSoundOn } from 'react-icons/gi'
 const Blog = ({ article }) => {
   const category = article[0]?.category[0]
   console.log(category + 'i love you')
+
+  const pg = article[0]?.content
   return (
     <main className={styles.main}>
       <div className="essayHeader">
@@ -22,9 +24,13 @@ const Blog = ({ article }) => {
       </div>
       <div>
         <h1 className="title">{article[0]?.title}</h1>
-        <p className="para">{article[0]?.content[0]}</p>
-        <p className="para">{article[0]?.content[1]}</p>
-        <p className="para">{article[0]?.content[2]}</p>
+        {pg.map((para) => {
+          return(
+            <p className='para'>{para}</p>
+          )
+        }
+        
+        )}
       </div>
       <div>
         <h1 className="like">You might also like</h1>
