@@ -25,7 +25,7 @@ export default function Home() {
     { value: 'mostrecent', label: 'Most recent', color: 'gray', id: 0 },
     { value: 'startups', label: 'Startups', color: 'gray', id: 2 },
     { value: 'family', label: 'Family', color: 'gray', id: 3 },
-    { value: 'others', label: 'Others', color: 'gray', id: 4 },
+    { value: 'philosophy', label: 'Philosophy', color: 'gray', id: 4 },
   ]
 
   const colorStyles = {
