@@ -25,12 +25,8 @@ const Blog = ({ article }) => {
       <div>
         <h1 className="title">{article[0]?.title}</h1>
         {pg.map((para) => {
-          return(
-            <p className='para'>{para}</p>
-          )
-        }
-        
-        )}
+          return <p className="para">{para}</p>
+        })}
       </div>
       <div>
         <h1 className="like">You might also like</h1>
