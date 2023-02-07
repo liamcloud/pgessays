@@ -120,7 +120,7 @@ export default function Home() {
         </div>
         <div>
           <footer>
-            <h1 className="li2">Made by Liam Cloud</h1>
+            <h1 className="li2">Footer</h1>
           </footer>
         </div>
       </main>
