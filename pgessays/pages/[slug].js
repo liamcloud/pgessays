@@ -14,13 +14,12 @@ const Blog = ({ article }) => {
   return (
     <main className={styles.main}>
       <div className="essayHeader">
-        <a href="/">
+        <Link className='a'href="/">
           <HiOutlineArrowSmLeft />
-        </a>
+        </Link>
         <Image loader="" src={angels} alt="Adam" width={800} height={400} />
-        <a href="https://www.youtube.com/watch?v=LKBk-jC1oHQ" target="_blank">
-          <GiSoundOn />
-        </a>
+        <Link className='a' href="https://www.youtube.com/watch?v=LKBk-jC1oHQ" target="_blank"><GiSoundOn /></Link>
+          
       </div>
       <div>
         <h1 className="title">{article[0]?.title}</h1>
