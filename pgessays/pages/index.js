@@ -59,7 +59,10 @@ export default function Home() {
       </Head>
 
       <h1 className="sound">
-        <Link href="https://www.youtube.com/watch?v=LKBk-jC1oHQ" target="_blank">
+        <Link
+          href="https://www.youtube.com/watch?v=LKBk-jC1oHQ"
+          target="_blank"
+        >
           <GiSoundOn />
         </Link>
       </h1>
