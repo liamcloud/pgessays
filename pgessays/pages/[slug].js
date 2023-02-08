@@ -14,17 +14,26 @@ const Blog = ({ article }) => {
   return (
     <main className={styles.main}>
       <div className="essayHeader">
-        <Link className='a'href="/">
+        <Link className="a" href="/">
           <HiOutlineArrowSmLeft />
         </Link>
         <Image loader="" src={angels} alt="Adam" width={800} height={400} />
-        <Link className='a' href="https://www.youtube.com/watch?v=LKBk-jC1oHQ" target="_blank"><GiSoundOn /></Link>
-          
+        <Link
+          className="a"
+          href="https://www.youtube.com/watch?v=LKBk-jC1oHQ"
+          target="_blank"
+        >
+          <GiSoundOn />
+        </Link>
       </div>
       <div>
         <h1 className="title">{article[0]?.title}</h1>
         {pg.map((para) => {
-          return <p className="para" key={para}>{para}</p>
+          return (
+            <p className="para" key={para}>
+              {para}
+            </p>
+          )
         })}
       </div>
       <div>
