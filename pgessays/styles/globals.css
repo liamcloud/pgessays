@@ -175,6 +175,15 @@ h2 {
   text-align: center;
 }
 
+@media(max-width: 1300px){
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8% 10%;
+    min-width: 50vw;
+    padding-bottom: 10%;
+  }
+}
+
 @media (max-width: 1150px) {
   .header {
     flex-direction: column-reverse;
@@ -187,14 +196,8 @@ h2 {
     max-width: 100%;
     height: inherit;
   }
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8% 20%;
-    min-width: 50vw;
-    padding-bottom: 10%;
-  }
   .essayContainer {
-    height: 550px;
+    height: 350px;
     background-size: cover;
   }
 
@@ -221,7 +224,7 @@ h2 {
     padding-bottom: 20%;
   }
   .essayContainer {
-    height: 500px;
+    height: 350px;
   }
 }
 
