@@ -47,7 +47,6 @@ export default function Home() {
 
   const searchUpdate = (event) => {
     setSearch(event.target.value)
-    console.log(search)
   }
   return (
     <>
