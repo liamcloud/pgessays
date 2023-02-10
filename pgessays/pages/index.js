@@ -94,6 +94,7 @@ export default function Home() {
             </form>
           </div>
         </div>
+        <div className='fit'>
         <div className="grid">
           {essays
             .filter((essay) => {
@@ -120,6 +121,7 @@ export default function Home() {
                 )
               }
             })}
+        </div>
         </div>
         <div>
           <footer>
