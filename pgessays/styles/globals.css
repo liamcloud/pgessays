@@ -147,6 +147,7 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
   gap: 5%;
   max-width: 60vw;
+  overflow: hidden;
 }
 
 
