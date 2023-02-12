@@ -147,13 +147,11 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
   gap: 5%;
   max-width: 60vw;
-  overflow: hidden;
 }
 
 
 .essayContainer {
-  height: 480px;
-  width:1fr;
+  min-height: 420px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -302,7 +300,6 @@ form input {
 }
 
 .li2{
-  padding-top:25% !important;
   padding-bottom: 5%;
   color:gray;
   font-size: 30px;
