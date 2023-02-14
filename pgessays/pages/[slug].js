@@ -4,7 +4,6 @@ import Image from 'next/image'
 import angels from '../public/angels.png'
 import { HiOutlineArrowSmLeft } from 'react-icons/hi'
 import Link from 'next/link'
-import { GiSoundOn } from 'react-icons/gi'
 
 const Blog = ({ article }) => {
   const category = article[0]?.category[0]
