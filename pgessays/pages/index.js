@@ -20,9 +20,10 @@ export default function Home() {
 
   const options = [
     { value: 'mostrecent', label: 'Most recent', color: 'gray', id: 0 },
-    { value: 'startups', label: 'Startups', color: 'gray', id: 2 },
-    { value: 'philosophy', label: 'Philosophy', color: 'gray', id: 4 },
-    { value: 'programming', label: 'Programming', color: 'gray', id: 5 },
+    { value: 'startups', label: 'Startups', color: 'gray', id: 1 },
+    { value: 'philosophy', label: 'Philosophy', color: 'gray', id: 2 },
+    { value: 'programming', label: 'Programming', color: 'gray', id: 3 },
+    { value: 'life', label: 'Life', color: 'gray', id: 4 },
   ]
 
   const colorStyles = {
