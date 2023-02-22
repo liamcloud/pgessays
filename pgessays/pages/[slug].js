@@ -4,6 +4,7 @@ import Image from 'next/image'
 import angels from '../public/angels.png'
 import { HiOutlineArrowSmLeft } from 'react-icons/hi'
 import Link from 'next/link'
+import { GiSoundOn } from 'react-icons/gi'
 
 const Blog = ({ article }) => {
   const category = article[0]?.category[0]
@@ -35,12 +36,11 @@ const Blog = ({ article }) => {
           )
         })}
       </div>
-      <div>
+      <div className='cont'>
         <h1 className="like">You might also like</h1>
         <div className="grid">
           {articles.map((essay) => {
             if (
-              essay.category.indexOf(category) !== -1 &&
               essay.title !== article[0]?.title &&
               essay.id < article[0]?.id + 2
             ) {

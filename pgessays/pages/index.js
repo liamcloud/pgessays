@@ -14,6 +14,8 @@ import Select from 'react-select'
 export default function Home() {
   const [category, setCategory] = useState('mostrecent')
   const [search, setSearch] = useState('')
+  const [currentPage, setCurrentPage] = useState(1)
+  const [PostsPerPage, setPostsPerPage] = useState(12)
   const updateCat = (selectedOption) => {
     setCategory(selectedOption.value)
   }
