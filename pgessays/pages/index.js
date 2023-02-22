@@ -121,7 +121,7 @@ export default function Home() {
         </div>
         <div>
           <footer>
-            <h1 className="li2">Footer test</h1>
+            <h1 className="li2">Made by <Link href="https://twitter.com/imliamcloud">Liam Cloud</Link></h1>
           </footer>
         </div>
       </main>
