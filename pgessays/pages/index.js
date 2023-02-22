@@ -10,6 +10,7 @@ import essays from './essays.json'
 import { useState } from 'react'
 import Link from 'next/link'
 import Select from 'react-select'
+import Posts from './posts'
 
 export default function Home() {
   const [category, setCategory] = useState('mostrecent')
@@ -94,33 +95,7 @@ export default function Home() {
             </form>
           </div>
         </div>
-        <div className="grid">
-          {essays
-            .filter((essay) => {
-              if (search == '') {
-                return essay
-              } else if (
-                essay.title.toLowerCase().includes(search.toLocaleLowerCase())
-              ) {
-                return essay
-              }
-            })
-            .map((essay) => {
-              if (essay.category.indexOf(category) !== -1) {
-                return (
-                  <Link href={`${essay?.slug}`} key={essay.id}>
-                    <div
-                      key={essay.id}
-                      className={'essayContainer'}
-                      style={{ backgroundImage: `url('${essay.image}')` }}
-                    >
-                      <h2>{essay.title}</h2>
-                    </div>
-                  </Link>
-                )
-              }
-            })}
-        </div>
+          <Posts />
         <div>
           <footer>
             <h1 className="li2">Made by <Link href="https://twitter.com/imliamcloud"><span className='made'>Liam ☁️</span></Link></h1>
