@@ -121,7 +121,7 @@ export default function Home() {
         </div>
         <div>
           <footer>
-            <h1 className="li2">Made by <Link href="https://twitter.com/imliamcloud"><span className='made'>Liam Cloud</span></Link></h1>
+            <h1 className="li2">Made by <Link href="https://twitter.com/imliamcloud"><span className='made'>Liam ☁️</span></Link></h1>
           </footer>
         </div>
       </main>
