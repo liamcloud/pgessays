@@ -260,24 +260,24 @@ form input {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 5rem;
-  width:60%;
+  width: 60%;
 }
 
-.essayContainer{
+.essayContainer {
   min-height: 25rem;
   border-top-left-radius: 200px;
-border-top-right-radius: 200px;
-background-position: center;
-background-size: cover;
-border: 5px solid white;
-box-shadow: 12px 12px 2px 1px #f8c8dc;
-display: flex;
+  border-top-right-radius: 200px;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid white;
+  box-shadow: 12px 12px 2px 1px #f8c8dc;
+  display: flex;
 }
 
 .essayContainer {
   position: relative;
-  }
-  .essayContainer::before {
+}
+.essayContainer::before {
   content: "";
   position: absolute;
   border-top-left-radius: 200px;
@@ -287,8 +287,8 @@ display: flex;
   bottom: 0px;
   left: 0px;
   background-color: rgba(0, 0, 0, 0.25);
-  }
-  
-  h2 {
+}
+
+h2 {
   position: relative;
-  }
+}
