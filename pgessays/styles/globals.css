@@ -167,6 +167,11 @@ h2 {
     height: inherit;
   }
 
+  .essayHeader img {
+    max-width: 100%;
+    height: inherit;
+  }
+
   .menu {
     flex-direction: column;
     width: 100vw !important;
@@ -293,11 +298,10 @@ h2 {
   position: relative;
 }
 
-
-.li2{
-  padding-top:5rem;
+.li2 {
+  padding-top: 5rem;
   font-size: 2rem;
-  padding-bottom:1rem;
+  padding-bottom: 1rem;
   font-family: "Old Standard TT", serif;
   text-underline-offset: 0.5rem;
 }
@@ -305,21 +309,21 @@ h2 {
 .made {
   text-decoration: underline;
 }
-.cont{
+.cont {
   width: 100%;
-  margin-right:auto;
+  margin-right: auto;
 }
 
-.pagination{
-  padding-top:90px;
+.pagination {
+  padding-top: 90px;
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
 
-li{
+li {
   border: 2px solid white;
-  padding:1rem;
+  padding: 1rem;
   font-size: 1.3rem;
   font-weight: bold;
   box-shadow: 6px 6px 2px 1px #f8c8dc;

@@ -36,7 +36,7 @@ const Blog = ({ article }) => {
           )
         })}
       </div>
-      <div className='cont'>
+      <div className="cont">
         <h1 className="like">You might also like</h1>
         <div className="grid">
           {articles.map((essay) => {
@@ -60,7 +60,12 @@ const Blog = ({ article }) => {
         </div>
       </div>
       <footer>
-      <h1 className="li2">Made by <Link href="https://twitter.com/imliamcloud" target="_blank"><span className='made'>Liam ☁️</span></Link></h1>
+        <h1 className="li2">
+          Made by{' '}
+          <Link href="https://twitter.com/imliamcloud" target="_blank">
+            <span className="made">Liam ☁️</span>
+          </Link>
+        </h1>
       </footer>
     </main>
   )

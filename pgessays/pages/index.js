@@ -101,36 +101,45 @@ export default function Home() {
           </div>
         </div>
         <div className="grid">
-      {currentPosts
-        .filter((essay) => {
-          if (search == '') {
-            return essay
-          } else if (
-            essay.title.toLowerCase().includes(search.toLocaleLowerCase())
-          ) {
-            return essay
-          }
-        })
-        .map((essay) => {
-          if (essay.category.indexOf(category) !== -1) {
-            return (
-              <Link href={`${essay?.slug}`} key={essay.id}>
-                <div
-                  key={essay.id}
-                  className={'essayContainer'}
-                  style={{ backgroundImage: `url('${essay.image}')` }}
-                >
-                  <h2>{essay.title}</h2>
-                </div>
-              </Link>
-            )
-          }
-        })}
-    </div>
+          {currentPosts
+            .filter((essay) => {
+              if (search == '') {
+                return essay
+              } else if (
+                essay.title.toLowerCase().includes(search.toLocaleLowerCase())
+              ) {
+                return essay
+              }
+            })
+            .map((essay) => {
+              if (essay.category.indexOf(category) !== -1) {
+                return (
+                  <Link href={`${essay?.slug}`} key={essay.id}>
+                    <div
+                      key={essay.id}
+                      className={'essayContainer'}
+                      style={{ backgroundImage: `url('${essay.image}')` }}
+                    >
+                      <h2>{essay.title}</h2>
+                    </div>
+                  </Link>
+                )
+              }
+            })}
+        </div>
         <div>
-        <Pagination postsPerPage={PostsPerPage} totalPosts={posts.length} paginate={paginate}/>
+          <Pagination
+            postsPerPage={PostsPerPage}
+            totalPosts={posts.length}
+            paginate={paginate}
+          />
           <footer>
-            <h1 className="li2">Made by <Link href="https://twitter.com/imliamcloud" target="_blank"><span className='made'>Liam ☁️</span></Link></h1>
+            <h1 className="li2">
+              Made by{' '}
+              <Link href="https://twitter.com/imliamcloud" target="_blank">
+                <span className="made">Liam ☁️</span>
+              </Link>
+            </h1>
           </footer>
         </div>
       </main>
