@@ -152,6 +152,7 @@ h2 {
   align-self: center;
   margin: 0 auto;
   text-align: center;
+  color:white !important;
 }
 
 @media (max-width: 1150px) {
@@ -256,6 +257,7 @@ form input {
 .essayHeader .a {
   font-size: 60px;
   position: sticky;
+  color:white !important;
 }
 
 .para {
