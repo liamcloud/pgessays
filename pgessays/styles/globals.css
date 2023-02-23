@@ -167,7 +167,7 @@ h2 {
     height: inherit;
   }
 
-  .para{
+  .para {
     min-width: 80vw;
   }
 
@@ -264,7 +264,7 @@ form input {
 .like {
   padding-top: 4rem;
   padding-bottom: 5%;
-  font-size:4rem;
+  font-size: 4rem;
 }
 
 .grid {
@@ -277,7 +277,7 @@ form input {
 .essayContainer {
   min-height: 25rem;
   max-width: 20rem;
-  margin:0 auto;
+  margin: 0 auto;
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
   background-position: center;
@@ -323,7 +323,7 @@ h2 {
   flex-direction: column;
 }
 
-.grid2{
+.grid2 {
   margin: 0 auto;
 }
 
@@ -340,14 +340,14 @@ li {
   font-weight: bold;
   box-shadow: 6px 6px 2px 1px #f8c8dc;
   cursor: pointer;
-  margin: 1rem
+  margin: 1rem;
 }
 
-.hr{
-  padding:0.1rem;
-  border:none;
+.hr {
+  padding: 0.1rem;
+  border: none;
 }
 
-.hr2{
-  padding:5rem;
+.hr2 {
+  padding: 5rem;
 }

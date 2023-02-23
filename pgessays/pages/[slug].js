@@ -18,7 +18,7 @@ const Blog = ({ article }) => {
         <Link className="a" href="/">
           <HiOutlineArrowSmLeft />
         </Link>
-        
+
         <Link
           className="a"
           href="https://www.youtube.com/watch?v=LKBk-jC1oHQ"
@@ -30,7 +30,7 @@ const Blog = ({ article }) => {
       <Image loader="" src={angels} alt="Adam" width={800} height={400} />
       <div>
         <h1 className="title">{article[0]?.title}</h1>
-        <p className='para'>{article[0]?.time}</p>
+        <p className="para">{article[0]?.time}</p>
         {pg.map((para) => {
           return (
             <p className="para" key={para}>
@@ -38,16 +38,17 @@ const Blog = ({ article }) => {
             </p>
           )
         })}
-        <div className='hr2'>
-        <hr  
-        className='hr'
-        style={{
-    color: 'white',
-    backgroundColor: 'white',
-    height: .5,
-    borderColor : 'white'
-}}/>
-</div>
+        <div className="hr2">
+          <hr
+            className="hr"
+            style={{
+              color: 'white',
+              backgroundColor: 'white',
+              height: 0.5,
+              borderColor: 'white',
+            }}
+          />
+        </div>
         {pn.map((para) => {
           return (
             <p className="para para2" key={para}>
@@ -55,16 +56,15 @@ const Blog = ({ article }) => {
             </p>
           )
         })}
-<p className='para'>{article[0]?.thanks}</p>
-
+        <p className="para">{article[0]?.thanks}</p>
       </div>
       <div className="cont">
         <h1 className="like">You might also like</h1>
         <div className="grid grid2">
           {articles.map((essay) => {
             if (
-              essay.title !== article[0]?.title &&
-              essay.id == article[0]?.id + 3 ||
+              (essay.title !== article[0]?.title &&
+                essay.id == article[0]?.id + 3) ||
               essay.id == article[0]?.id + 1 ||
               essay.id == article[0]?.id + 2
             ) {
