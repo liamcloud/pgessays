@@ -2,7 +2,7 @@ import essays from './essays.json'
 import { useState } from 'react'
 import Link from 'next/link'
 
-const Posts = () => {
+const Posts = (posts) => {
   const [category, setCategory] = useState('mostrecent')
   const [search, setSearch] = useState('')
   return (
