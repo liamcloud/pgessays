@@ -60,7 +60,7 @@ const Blog = ({ article }) => {
         </div>
       </div>
       <footer>
-        <h1 className="li2">Footer</h1>
+      <h1 className="li2">Made by <Link href="https://twitter.com/imliamcloud" target="_blank"><span className='made'>Liam ☁️</span></Link></h1>
       </footer>
     </main>
   )
