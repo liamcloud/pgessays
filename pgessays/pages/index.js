@@ -16,7 +16,7 @@ export default function Home() {
   const [category, setCategory] = useState('mostrecent')
   const [search, setSearch] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
-  const [PostsPerPage, setPostsPerPage] = useState(3)
+  const [PostsPerPage, setPostsPerPage] = useState(12)
   const updateCat = (selectedOption) => {
     setCategory(selectedOption.value)
   }
@@ -53,6 +53,8 @@ export default function Home() {
   const indexOfLastPost = currentPage * PostsPerPage
   const indexOfFirstPost = indexOfLastPost - PostsPerPage
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost)
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
   return (
     <>
@@ -127,9 +129,9 @@ export default function Home() {
         })}
     </div>
         <div>
-        <Pagination postsPerPage={PostsPerPage} totalPosts={posts.length}/>
+        <Pagination postsPerPage={PostsPerPage} totalPosts={posts.length} paginate={paginate}/>
           <footer>
-            <h1 className="li2">Made by <Link href="https://twitter.com/imliamcloud"><span className='made'>Liam ☁️</span></Link></h1>
+            <h1 className="li2">Made by <Link href="https://twitter.com/imliamcloud" target="_blank"><span className='made'>Liam ☁️</span></Link></h1>
           </footer>
         </div>
       </main>
