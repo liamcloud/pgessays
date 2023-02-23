@@ -16,6 +16,7 @@ export default function Home() {
   const [search, setSearch] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
   const [PostsPerPage] = useState(12)
+
   const updateCat = (selectedOption) => {
     setCategory(selectedOption.value)
   }
@@ -135,9 +136,9 @@ export default function Home() {
           />
           <footer>
             <h1 className="li2">
-              Made by{' '}
+              Made by
               <Link href="https://twitter.com/imliamcloud" target="_blank">
-                <span className="made">Liam ☁️</span>
+                <span className="made"> Liam ☁️</span>
               </Link>
             </h1>
           </footer>

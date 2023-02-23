@@ -167,6 +167,10 @@ h2 {
     height: inherit;
   }
 
+  .para{
+    min-width: 80vw;
+  }
+
   .essayHeader img {
     max-width: 100%;
     height: inherit;
@@ -243,6 +247,7 @@ form input {
 
 .essayHeader .a {
   font-size: 60px;
+  position: sticky;
 }
 
 .para {
@@ -257,8 +262,9 @@ form input {
 }
 
 .like {
-  padding-top: 10%;
+  padding-top: 4rem;
   padding-bottom: 5%;
+  font-size:4rem;
 }
 
 .grid {
@@ -270,6 +276,8 @@ form input {
 
 .essayContainer {
   min-height: 25rem;
+  max-width: 20rem;
+  margin:0 auto;
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
   background-position: center;
@@ -311,14 +319,18 @@ h2 {
 }
 .cont {
   width: 100%;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid2{
+  margin: 0 auto;
 }
 
 .pagination {
   padding-top: 90px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
 }
 
 li {
@@ -328,4 +340,14 @@ li {
   font-weight: bold;
   box-shadow: 6px 6px 2px 1px #f8c8dc;
   cursor: pointer;
+  margin: 1rem
+}
+
+.hr{
+  padding:0.1rem;
+  border:none;
+}
+
+.hr2{
+  padding:5rem;
 }
