@@ -10,7 +10,6 @@ import essays from './essays.json'
 import { useState } from 'react'
 import Link from 'next/link'
 import Select from 'react-select'
-import Posts from './posts'
 
 export default function Home() {
   const [category, setCategory] = useState('mostrecent')
