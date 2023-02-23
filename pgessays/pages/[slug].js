@@ -31,7 +31,7 @@ const Blog = ({ article }) => {
       <div>
         <h1 className="title">{article[0]?.title}</h1>
         <p className="para">{article[0]?.time}</p>
-        {pg.map((para) => {
+        {pg?.map((para) => {
           return (
             <p className="para" key={para}>
               {para}
@@ -49,7 +49,7 @@ const Blog = ({ article }) => {
             }}
           />
         </div>
-        {pn.map((para) => {
+        {pn?.map((para) => {
           return (
             <p className="para para2" key={para}>
               {para}
