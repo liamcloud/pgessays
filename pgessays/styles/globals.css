@@ -309,3 +309,19 @@ h2 {
   width: 100%;
   margin-right:auto;
 }
+
+.pagination{
+  padding-top:90px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+li{
+  border: 2px solid white;
+  padding:1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  box-shadow: 6px 6px 2px 1px #f8c8dc;
+  cursor: pointer;
+}

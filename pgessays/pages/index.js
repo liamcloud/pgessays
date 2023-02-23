@@ -10,12 +10,13 @@ import essays from './essays.json'
 import { useState } from 'react'
 import Link from 'next/link'
 import Select from 'react-select'
+import Pagination from './pagination'
 
 export default function Home() {
   const [category, setCategory] = useState('mostrecent')
   const [search, setSearch] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
-  const [PostsPerPage, setPostsPerPage] = useState(12)
+  const [PostsPerPage, setPostsPerPage] = useState(3)
   const updateCat = (selectedOption) => {
     setCategory(selectedOption.value)
   }
@@ -126,6 +127,7 @@ export default function Home() {
         })}
     </div>
         <div>
+        <Pagination postsPerPage={PostsPerPage} totalPosts={posts.length}/>
           <footer>
             <h1 className="li2">Made by <Link href="https://twitter.com/imliamcloud"><span className='made'>Liam ☁️</span></Link></h1>
           </footer>
