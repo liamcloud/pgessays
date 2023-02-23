@@ -158,6 +158,7 @@ h2 {
   .header {
     flex-direction: column-reverse;
   }
+
   .header h1 {
     max-width: 100%;
     font-size: 40px;
@@ -187,6 +188,13 @@ h2 {
   }
   .form {
     width: 50% !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .grid {
+    width: 100% !important;
+    padding-top: 1rem;
   }
 }
 
@@ -277,7 +285,6 @@ form input {
 .essayContainer {
   min-height: 25rem;
   max-width: 20rem;
-  margin: 0 auto;
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
   background-position: center;
@@ -285,6 +292,7 @@ form input {
   border: 5px solid white;
   box-shadow: 12px 12px 2px 1px #f8c8dc;
   display: flex;
+  margin: 0 auto;
 }
 
 .essayContainer {
