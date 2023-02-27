@@ -25,7 +25,7 @@ export default function Home() {
     { value: 'mostrecent', label: 'Most recent', color: 'gray', id: 0 },
     { value: 'startups', label: 'Startups', color: 'gray', id: 1 },
     { value: 'philosophy', label: 'Philosophy', color: 'gray', id: 2 },
-    { value: 'programming', label: 'Programming', color: 'gray', id: 3 },
+    { value: 'technology', label: 'Technology', color: 'gray', id: 3 },
     { value: 'life', label: 'Life', color: 'gray', id: 4 },
   ]
 
