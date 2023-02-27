@@ -7,18 +7,11 @@ import Link from 'next/link'
 import { GiSoundOn } from 'react-icons/gi'
 
 const Blog = ({ article }) => {
-  const category = article[0]?.category[0]
-  console.log(category + 'i love you')
-
   const pg = article[0]?.content
   const pn = article[0]?.notes
   return (
     <main className={styles.main}>
       <div className="essayHeader">
-        <Link className="a" href="/">
-          <HiOutlineArrowSmLeft />
-        </Link>
-
         <Link
           className="a"
           href="https://www.youtube.com/watch?v=LKBk-jC1oHQ"
